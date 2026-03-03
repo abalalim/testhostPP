@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in to your account</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="logo">
+          <span>S</span>
+        </div>
+        <h1>Log-in to your account</h1>
+      </div>
+
+      <form id="login-form" class="login-form">
+        <div class="input-group">
+          <i class="fas fa-user input-icon"></i>
+          <input type="email" id="email" name="email" placeholder="E-mail address" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock input-icon"></i>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    </div>
+
+    <div class="signup-prompt">
+      <span>New to us?</span>
+      <a href="#" class="signup-link">Sign Up</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Redirect to landing page on login
+      window.location.href = 'landing.html';
+    });
+  </script>
+</body>
+</html>
